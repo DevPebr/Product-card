@@ -134,6 +134,10 @@ main {
 }
 
 @media (max-width: 450px) {
+
+    body {
+        height: 100vh;
+    }
     .card {
         width: 330px;
         height: 70vh;
@@ -149,7 +153,8 @@ main {
 
     p.text {
         
-        font-size: 12px;
+        font-size: 14px;
+        width: 110%;
     }
 
 
@@ -157,24 +162,4 @@ main {
         width: 280px;
        }
 
-}
-
-@media (max-width: 374px) {
-    .card {
-        width: 280px;
-        height: 65vh;
-    }
-
-    .card h1 {
-        font-size: 1.5rem;
-    }
-
-    p.text {
-        font-size: 0.7rem;
-        letter-spacing: 0;
-    }
-
-    section.info button {
-        width: 220px;
-    }
 }
