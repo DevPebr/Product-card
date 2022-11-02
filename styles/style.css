@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif; */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    
+}
+
+main {
+    
+    border-radius: 15px;
+    display: flex;
+    width: 600px;
+    height: 420px;
+}
+
+.large-product {
+    width: 300px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 15px 15px 0;
+    gap: 15px;
+}
+
+.info h1 {
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+
+.info p {
+    font-size: 0.9rem;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    
+}
+.text {
+    letter-spacing: 0.4px;
+    line-height: 1.2rem;
+}
+
+.price {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.price h1 {
+    font-size: 1.9rem;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+
+.price p {
+    text-decoration:line-through;
+}
+
+.footer-btn {
+    display: flex;
+    
+}
+
+.footer-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 235px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.4s ease-in;
+}
+
+.footer-btn button:hover {
+    cursor: pointer;
+    background-color: #001E00;
+}
+
+@media (max-width: 620px) {
+    .card {
+        flex-direction: column;
+        height: 650px;
+        width: 400px;
+        
+    }
+
+    .large-product {
+       
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .info {
+        height: 100%;
+        border-radius: 0 0 15px 15px;
+        gap: 20px;
+        
+    }
+
+   p.text {
+    font-size: 16px;
+    
+   }
+
+  section.info button {
+    width: 340px;
+   }
+
+    
+}
+
+@media (max-width: 450px) {
+    .card {
+        width: 330px;
+        height: 70vh;
+        
+    }
+
+    .card h1 {
+        
+        font-size: 1.8rem;
+    }
+
+
+
+    p.text {
+        
+        font-size: 12px;
+    }
+
+
+    section.info button {
+        width: 280px;
+       }
+
+}
+
+@media (max-width: 374px) {
+    .card {
+        width: 280px;
+        height: 65vh;
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+    }
+
+    p.text {
+        font-size: 0.7rem;
+        letter-spacing: 0;
+    }
+
+    section.info button {
+        width: 220px;
+    }
+}
