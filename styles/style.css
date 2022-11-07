@@ -136,11 +136,11 @@ main {
 @media (max-width: 450px) {
 
     body {
-        height: 100vh;
+        height: 130vh;
     }
     .card {
         width: 330px;
-        height: 70vh;
+        height: 68vh;
         
     }
 
